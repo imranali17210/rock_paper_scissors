@@ -1,0 +1,51 @@
+print('hi')
+def height(name,age,distance):
+    height.name = name
+    height.age = age
+    height.distance = distance
+    print('You are name is :'+name+' '+'and your age is :'+str(age)+""+'with height of :'+str(height))
+height('Imran',26,34)
+
+import random
+while True:
+    choices = ['rock','paper','scissors']
+    computer = random.choice(choices)
+    player = None
+    while player not in choices:
+        player = input('Enter your choice : ').lower()
+        print(player)
+    if player == computer:
+            print('player choice :',player)
+            #print('computer choice :',computer)
+            print('match draw')
+    elif player == 'rock':
+        if computer =="paper":
+                print('player choice :',player)
+               # print('computer choice :',computer)
+                print('computer wins')
+        if computer == 'scissors':
+                print('player choice :',player)
+               # print('computer choice :',computer)
+                print('player wins')
+    elif player == 'scissors':
+        if computer =="paper":
+                print('player choice :',player)
+                #print('computer choice :',computer)
+                print('player wins')
+        if computer == 'rock':
+                print('player choice :',player)
+               # print('computer choice :',computer)
+                print('computer wins')
+    elif player == 'paper':
+        if computer =="scissors":
+                print('player choice :',player)
+              #  print('computer choice :',computer)
+                print('computer wins')
+        if computer == 'rock':
+                print('player choice :',player)
+              #  print('computer choice :',computer)
+                print('player wins') 
+    play_again = input('want to play again (yes/no) :').lower()
+    if play_again != 'yes':
+        break
+print('Good Bye')
